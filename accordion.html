@@ -1,0 +1,65 @@
+<!-- Yusuf Günay -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>How to Play?</title>
+    <link rel="stylesheet" href="wordle.css">
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="index.html"><i class="fa-solid fa-home"></i> Home</a></li>
+            <li><a href="Word-Pool.txt"><i class="fa-solid fa-list-ul"></i> Word List</a></li>
+            <li><a href="accordion.html"><i class="fa-solid fa-play"></i> How to Play?</a></li>
+            <li><a href=""><i class="fa-solid fa-envelope"></i> Contact Us</a></li>
+            <li><a href="https://wordlegame.org/"><i class="fa-solid fa-up-right-from-square"></i> Go to Wordle Game(Original)</a></li>
+        </ul>
+    </div>
+
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label">How to Play?</div>
+            <div class="content">
+                <p>In Wordle, players try to guess a 5-letter word in 6 tries. During these trials, when the letters in the word are used in the right spot, the relevant box turns green.</p>
+                <br>
+                <p>The letters in the word that are not used in the right place are painted yellow, and the letters that do not exist in the word are painted gray.</p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">Rules</div>
+            <div class="content">
+                <p>The user can only play the game once a day.</p>
+                <br>
+                <p>The user has a maximum of 6 guesses.</p>
+                <br>
+                <p>Not every word written may be appropriate.</p>
+                <br>
+                <p>The green letter is in the same place in the target word.</p>
+                <br>
+                <p>The yellow letter is in the target word, but its location is different.</p>
+                <br>
+                <p>The gray letter is not found in the target word.</p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">Message for You</div>
+            <div class="content">
+                <br> <br> <br>
+                <p>👑Congratulations, you can now play the game.👑</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const accordion = document.getElementsByClassName ('contentBx');
+        for (i = 0 ; i < accordion.length; i++) {
+            accordion[i].addEventListener('click' , function() {this.classList.toggle('active')})
+        }
+    </script>
+</body>
+</html>
